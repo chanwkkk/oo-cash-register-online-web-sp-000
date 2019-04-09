@@ -7,15 +7,11 @@ class CashRegister
     @pricelist=[]
   end
 
-  def add_item(item, price,quantity=0)
-    if quantity==0
-    @total+=price
-    @items<<item
-  else @total=price*quantity+@total
-    counter=0
-    while counter<quantity
+  def add_item(item, price,quantity=1)
+    
+  @total=price*quantity+@total
+   quantity.time do 
       @items<<item
-      counter+=1
     end
   end
   @pricelist<<price
