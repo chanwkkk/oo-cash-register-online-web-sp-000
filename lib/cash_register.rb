@@ -14,7 +14,7 @@ class CashRegister
       @items<<item
     end
   end
-  @pricelist<<price
+  @pricelist<<price*quantity
 
 end
 
