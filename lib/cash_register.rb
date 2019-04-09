@@ -13,7 +13,6 @@ class CashRegister
    quantity.time do
       @items<<item
     end
-  end
   @pricelist<<price*quantity
   last_transaction=price*quantity
   #it will update everytime a new thing get added, saving the work to use the pricelist as in the last statement because
