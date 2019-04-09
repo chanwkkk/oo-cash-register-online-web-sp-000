@@ -36,8 +36,8 @@ end
 
 def void_last_transaction
   #find the last item's price and subtract it
-@total=@total-@pricelist[pricelist.size-1]
-
+#@total=@total-@pricelist[pricelist.size-1]
+@total-=last_transaction
 end
 
 
